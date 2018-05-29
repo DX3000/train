@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choo Choo Train</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3">
+
+                <form id="inputForm">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Train Name</label>
+                        <input type="text" class="form-control" id="trainName" aria-describedby="nameHelp" placeholder="Enter Train name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Destination</label>
+                        <input type="text" class="form-control" id="trainDestination" aria-describedby="destinationHelp" placeholder="Where the heck is this thing going??">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Time</label>
+                        <input type="time" class="form-control" id="trainTime" aria-describedby="timeHelp" placeholder="When's this show getting on the road?">
+
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+           
+            <div class="col-7">
+                <table id="schedule" class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Departure Time</th>
+                            <th scope="col">Next Train in</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js" type="text/javascript"></script>
+    <script src="train.js"></script>
+
+
+</body>
+
+</html>
